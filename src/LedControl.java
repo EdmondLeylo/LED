@@ -13,7 +13,7 @@ public class LedControl {
         
         // creating the pin with parameter PinState.HIGH
         // will instantly power up the pin
-        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "PinLED", PinState.HIGH);
+        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_03, "PinLED", PinState.HIGH);
         System.out.println("light is: ON");
         
         // wait 2 seconds
