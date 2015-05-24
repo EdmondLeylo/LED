@@ -22,6 +22,8 @@ public class LedControl {
         try {
 			Thread.sleep(sec *1000);
 			pin.low();
+			System.out.println("light is: OFF");
+			pin.blink(3);
 			gpio.shutdown();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
